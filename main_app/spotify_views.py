@@ -6,7 +6,7 @@ from django.views.generic import ListView, DetailView
 SPOTIFY_CLIENT_ID = os.environ['SPOTIFY_CLIENT_ID']
 SPOTIFY_CLIENT_SECRET = os.environ['SPOTIFY_CLIENT_SECRET']
 SPOTIFY_REDIRECT_URI_ENCODED = 'https%3A%2F%2Fpy-tunes.herokuapp.com%2Fspotify%2Freceive-code%2F'
-SPOTIFY_REDIRECT_URI = 'https://py-tunes.herokuapp.com/spotify/receive-code/'
+SPOTIFY_REDIRECT_URI = 'http://localhost:8000/spotify/receive-code/'
 
 
 def renew_token(request):
